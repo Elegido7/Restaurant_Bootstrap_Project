@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/styles.css">
+
+    <script src="https://kit.fontawesome.com/4174bcb05b.js" crossorigin="anonymous"></script>        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<!-- The project is a landing page hence all the sections are in one paged linked internally using id -->
+<body  class="bg-success-subtle">
+  <nav class="navbar fixed-top navbar-expand-lg bg-primary-subtle">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-3" style="color: blue; font-family: palatino linotype;" href="#">Elegido Restaurant</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header justify-content-center">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Elegido</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+      <div class="offcanvas-body mx-4 fs-5 d-md-flex justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#home">Home</a>
+          </li> 
+          <li class="nav-item d-flex order-4 order-md-3">
+            <a class="nav-link text-success" href="#menu">Menu</a>
+          </li>         
+          <li class="nav-item d-flex order-md-3 order-md-4">
+            <a class="nav-link text-success" href="#about">About</a>
+          </li>          
+          <li class="nav-item d-flex order-5 order-md-5">
+            <a class="nav-link text-success" href="#contact">Contact</a>
+          </li>
+        </ul>        
+      </div>
+    </div>
+  </nav>
+
+<div class="container-fluid mt-3">
+          <!-- Hero image section-->
+<section class="bsb-overlay bsb-hover-pull text-opacity-50">
+  <div class="container img-fluid rounded-5" id="home" style="background-image: url('./Images/Snack.jpg'); height: 800px; width: 1500px">
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-11 col-lg-9 col-xl-7 text-center text-white mt-5" style="padding-top: 60px;">
+        <h2 class="display-3 fw-bold bg-success text-warning pb-4">Chef Special</h2>
+        <p class="lead mb-5 bg-secondary p-2 fw-semibold mt-5 mx-auto">Come dine and enjoy a nostalgic, tasty special from our lead chef.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn bsb-btn-xl btn-light gap-3 bg-success-subtle fs-5 fw-semibold rounded-4"><a href="contact.html">Book with us</a></button>          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>  
+<div class="container-fluid mt-5" style="font-family:constantia">
+  <div class="row">
+      <div class="col-12 col-md-4 col-lg-7 col-xl-4 font-medium mx-auto">     
+        <h1 class="fs-2 fw-bold text-success text-uppercase mx-4 pt-3">Elegido™</h1>        
+            <p class="text-wrap p-4 fs-3 mx-auto text-center" style="width: 20rem;"><i class="text-secondary">Elegido Restaurant </i>is home to diverse <b style="color: rgb(129, 6, 170);"> local and international</b> cuisines.</p>
+            <P class="text-wrap p-2 fs-4 mx-auto text-center fst-italic">It's the place of warmth, relaxing ambience and lung cleansing experience</P>
+           <hr>  
+        <h4 class="text-center mb-4">Welcome to <b class="text-danger">Elegido Restaurant.</b></h4>                        
+      </div>
+      <!-- The carousel are used to offer more view of the restaurant visual without crowding many images in a grid layout -->
+      <div id="carouselExampleAutoplaying" class="col-12 offset-1 col-md-7 col-lg-3 col-xl-7 img-fluid mx-auto p-md-4" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          </div>
+        <div class="carousel-inner">      
+          <div class="carousel-item active">
+            <img src="Images/Outdoor.webp" class="d-block rounded-5 img-fluid" width="700px" height="280px" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/Main_hall_5.jpg" class="d-block rounded-5 img-fluid" width="700px" height="280px" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/Ambience.jpg" class="d-block rounded-5 img-fluid" width="700px" height="280px"alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/Breakfast.jpg" class="d-block rounded-5 img-fluid" width="700px" height="280px"alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/wine bar.jpg" class="d-block rounded-5 img-fluid" width="700px" height="280px"alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/Pizza_room_1.jpg" class="d-block rounded-5 img-fluid" width="700px" height="280px"alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/Swimming pool.jpg" class="d-block rounded-5 img-fluid" width="700px" height="280px"alt="">
+          </div>          
+        </div>
+      </div>  
+        <button class="carousel-control-prev mx-auto" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next mx-auto" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>     
+      </div>
+  </div>
+</div>
+  <hr/> 
+<!-- Menu section -->
+<div class="accordion accordion-flush mt-4" id="accordionFlushExample">
+  <div class="accordion-item border border-5 border-white" id="menu">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <h3 class="text-success fw-semibold">Restaurant Menu</h3>
+      </button>
+    </h2>
+    <!-- The menu is designed using accordion and a grid layout of card to create a collapsable Menu organized in a column -->
+    <div id="flush-collapseOne" class="accordion-collapse collapse mt-2" data-bs-parent="#accordionFlushExample">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card mx-auto">
+            <img src="Images/ChilliGobi5.jpg" class="card-img-top img-fluid rounded-4 mx-auto" style="height: 250px; width: 250px;" alt="...">
+            <div class="card-body mx-auto">
+              <h3 class="card-title fw-semibold text-primary">Chilli Cauliflower</h3>
+              <p class="card-text">Chinese style cripsy Cauliflower tossed in Chilli sauce and sweetened with Capsicum onion.</p>
+              <a href="#" class="btn btn-primary fs-4">Kes. 700</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card mx-auto">
+            <img src="Images/Fried calamari.jpg" class="card-img-top img-fluid rounded-4 mx-auto" style="height: 250px; width: 250px;" alt="...">
+            <div class="card-body mx-auto">
+              <h3 class="card-title fw-semibold text-primary">Fried Calamari</h3>
+              <p class="card-text">Breaded Calamari, lightly fried in canola oil. Served with a side of marinara.</p>
+              <a href="#" class="btn btn-primary fs-4">Kes. 1,100</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card mx-auto">
+            <img src="Images/Brocolli Tikki.jpg" class="card-img-top img-fluid rounded-4 mx-auto" style="height: 250px; width: 250px;" alt="...">
+            <div class="card-body mx-auto">
+              <h3 class="card-title fw-semibold text-primary">Brocolli Tikki</h3>
+              <p class="card-text">A grilled and mashed Brocolli snack served hot stuffed with sweet and hot cottage cheese.</p>
+              <a href="#" class="btn btn-primary fs-4">Kes. 750</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card mx-auto">
+            <img src="Images/Coconut-Creme-Brulee-Finished.jpg" class="card-img-top img-fluid rounded-4 mx-auto" style="height: 250px; width: 250px;" alt="...">
+            <div class="card-body mx-auto">
+              <h3 class="card-title fw-semibold text-primary">Coconut Crème</h3>
+              <p class="card-text">French style custard made with coconut milk caramelized sugar, fresh fruit.</p>
+              <a href="#" class="btn btn-primary fs-4">Kes. 400</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-12 bg-white border border-2">
+  <h4 style="font-family: High Tower Text" class="mt-4 text-secondary fst-italic mb-4 mx-4">Feel free to take a look at our <b class="fs-4 text-danger fst-italic">menu</b>.</h4>
+</div>
+  <hr>
+  <!--The about Section-->
+  <!-- The section has a phpto and some text aligned side by side using the col -->
+  <div class="container-fluid fs-5 mt-5">
+    <div class="row">
+      <div class="container col-12 col-sm-4 col-md-4 col-lg-4 px-2 mt-5 mx-auto">
+        <h3 style="color: green; font-family: Adobe Garamond Pro Bold;" class="fw-bold pt-3 text-center" id="about">About Elegido™</h3>
+        <hr>
+            <p class="text-wrap p-2 fs-3 mx-auto" style="width: 20rem; font-family: Poor Richard;">Elegido Restaurant, is a subsidiary of the <b style="color: rgb(129, 6, 170);"> Elegido™ Company</b>.</p>
+            <p class="text-wrap p-2 fs-3 fst-italic mx-auto" style="width:22rem; font-family: palatino;">Elegido restaurant aims at offering the best cuisines and ambience that create <b class="text-danger fs-4 ">Nostalgic memories</b>.</p>              
+      </div>
+      <div class="container col-12 col-sm-7 offset-1 col-md-7 col-lg-6 p-5 mt-2 ml-2 mx-auto">
+        <h3 style="color: blue; font-family: Adobe Garamond Pro Bold;" class="fw-bold">Elegido™</h3>
+        <hr>
+        <img src="Images/Ambience.jpg" alt="" width="600" height="400" class="rounded-5 img-fluid">            
+      </div>
+    </div>
+  </div>
+  <!-- The two paragraphs on about section offer better alignment look to the other about columns -->
+  <div class="container-fluid"> 
+      <div class="row">         
+        <div class="container col-11 col-md-5 px-2 fs-4 mx-auto" style="font-family: Perpetua;">
+            <h2 class="text-lg text-primary fw-bold">who are we?</h2>
+            <hr/>
+              <p style="text-align: justify;">Nestled in the heart of a the blissful Tigoni region, the <b class="fs-4">Elegido Restaurant</b> offers a cozy retreat for those seeking a culinary experience infused with warmth and charm. Established by <b class="text-danger fs-4">Elegido Leonardo</b> together with <b class="text-primary fs-4">Chef Ramirez</b> in 2015, this beloved eatery has become a cherished gem within the community. It offers rustic yet elegant décor, adorned with vintage wine barrels and flickering modern and vintage lighting. The Elegido Restaurant invites patrons to savor not just delectable cuisine, but an ambiance that feels like home. Chef Ramirez's menu reflects her passion for seasonal, locally sourced ingredients, with dishes ranging from comforting classics to inventive culinary delights. Whether it's a leisurely brunch with friends or a romantic dinner for two, each visit to the Elegido Restaurant promises an unforgettable journey for the senses.</p>
+          </div>
+          <div class="container col-11 col-md-6 px-2 mt-2 fs-4 p-4" style="font-family: Perpetua;">
+            <hr>
+            <p class="pt-2" style="text-align: justify;">At Elegido Restaurant, culinary delight awaits with a diverse array of dishes that celebrate the bounty of the seasons. Infused with creativity and passion, the menu reflects a commitment to showcasing the freshest local ingredients, sourced directly from nearby farms and producers. From farm-to-table salads bursting with vibrant colors and flavors to hearty mains that pay homage to traditional recipes with a modern twist, each dish is a masterpiece of culinary craftsmanship. Whether indulging in the delicate flavors of a seafood risotto or savoring the rich aromas of slow-roasted meats, every bite at Elegido Restaurant is a celebration of quality and authenticity. With options to suit every palate, including vegetarian and gluten-free offerings, this restaurant invites diners on a journey of culinary exploration and discovery, where every meal is a testament to the chef's dedication to excellence and the joy of sharing good food with good company.</p>
+          </div>      
+      </div>
+  </div>  
+  <hr/>
+  
+<!-- Contact Section -->
+<div class="container-fluid mx-auto p-4 mt-2">
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-6">
+      <form class="p-4" id="contact">
+          <h2 class="text-center fw-semibold text-primary">Reach Us</h2>
+      <hr>
+      <div class="row mb-3">
+        <div class="col">
+              <label class="fw-semibold">First Name:</label>
+              <input class="form-control text-secondary" type="text" placeholder="first name"/>
+        </div>
+        <div class="col">
+              <label class="fw-semibold">Last Name:</label>
+              <input class="form-control text-secondary"  type="text" placeholder="last name"/>
+        </div>        
+      </div>  
+      <div class="row mb-3">
+        <div class="col">
+              <label class="fw-semibold">Phone Number:</label>
+              <input class="form-control text-secondary" type="tel" placeholder="phone no"/>
+        </div>
+      <div class="col">
+              <label class="fw-semibold">Email:</label>
+              <input class="form-control text-secondary" type="email" placeholder="email"/>
+      </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <label class="fw-semibold">Age:</label>
+          <input class="form-control text-secondary" type="text" placeholder="age in years"/>
+        </div>
+        <div class="col">
+          <label class="fw-semibold">Gender:</label>
+          <select class="form-control text-secondary" class="form select">       
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="O">Other</option>
+          </select>
+        </div>                  
+      </div>
+      <div class="col ">              
+          <textarea id="message" rows="4" class="block text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-500 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Talk to us..."></textarea>               
+      </div>
+      <div class="text-center mt-2">
+        <button type="submit" class="btn btn-info">SUBMIT</button>
+      </div>
+    </form>
+    </div>  
+    <Div class="col-12 col-md-6 col-lg-6 ">
+      <form class="p-4">
+        <h2 class="text-center fw-semibold text-primary ">Book with us</h2>
+      <hr>
+      <div class="row">
+        <div class="col-6">
+          <label class="fw-semibold mb-2">Reservation date:</label>
+          <input class="form-control text-secondary mb-3" type="date" placeholder="date"/>
+        </div>
+        <div class="col-6">
+          <label class="fw-semibold mb-2">No. of people</label>
+          <select class="form-control text-secondary" class="form select">       
+            <option value="#">1 person</option>
+            <option value="#">2 people</option>
+            <option value="#">3 people</option>
+            <option value="#">4 people</option>
+            <option value="#">5 people</option>
+            <option value="#">6 people</option>
+            <option value="#">7 people</option>
+            <option value="#">8 people</option>
+            <option value="#">9 people</option>
+            <option value="#">10 people</option>
+            <option value="#">11 people</option>
+            <option value="#">12 people</option>
+            <option value="#">13 people</option>
+            <option value="#">14 people</option>
+            <option value="#">15 people</option>
+            <option value="#">16 people</option>
+            <option value="#">17 people</option>
+            <option value="#">18 people</option>
+            <option value="#">19 people</option>
+            <option value="#">20 people</option>
+           </select>    
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <label class="fw-semibold mb-2">Other Specify:</label>
+            <input class="form-control text-secondary" type="text" placeholder="above 20 people"/>
+        </div>
+          <div class="col-6">
+            <label class="fw-semibold mb-2">Purpose</label>
+            <select class="form-control text-secondary" class="form select">       
+              <option value="#">Date</option>
+              <option value="#">Family</option>
+              <option value="#">Reunion</option>
+              <option value="#">Meet-up</option>
+              <option value="#">Conference</option>
+             </select>    
+          </div>
+        </div>
+          <div class="text-center mt-4">
+            <button type="submit" class="btn btn-success">SUBMIT</button>
+          </div>                     
+      </div>
+      </form>
+    </Div>
+  </div>   
+</div>
+<hr/>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-sm-8 col-md-12">
+      <h4 style="font-family: High Tower Text" class="mt-2 text-secondary fst-italic mb-4 mx-4">Thank you for choosing <b class="fs-4 text-danger fst-italic">Elegido Restaurant</b>.</h4>
+    </div>
+  </div>
+</div>
+<!-- Footer section -->
+<div class="card">  
+  <div class="row card-body bg-info-subtle mb-0 mt-0 mx-0">
+      <div class="col-4 col-sm-3 col-md-4 col-lg-4">
+          <img src="Images/Elegido Logo.png" width="50" height="50" alt="Elegido™">
+          <label class="card-title fs-4" style="color: blue;">Elegido™</label>
+      </div>
+      <div class="col-8 col-sm-9 col-md-8 col-lg-8 text-end fs-3 px-5">
+          <a href="https://www.facebook.com/login" target="_blank"><i class="fa-brands fa-facebook"></i></a>             
+          <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/i/flow/login" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>              
+          <a href="https://www.linkedin.com/login" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://maps.app.goo.gl/ZMvKWtdPg5QUQUB99" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>
+      </div>
+  </div>
+    <div class="row mx-0">   
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center py-3 bg-primary-subtle">
+       &COPY; 2024 Copyright:
+        <a class="text-body fs-4 mx-2 fw-semibold" href="https://student.learn.gomycode.co/">Elegido™</a>
+      </div>
+    </div>    
+</div>
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
